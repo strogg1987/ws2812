@@ -1,0 +1,44 @@
+// Configure debug launch settings
+// Feel free to copy these and modify them for your debugger and MCU
+{
+    "version": "0.2.0",
+    "projectName": "ws2812",
+    "configurations": [
+        {
+            "name": "JLink launch",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/ws2812.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "device": "STM32G070rb",
+            "interface": "swd",
+            "preLaunchTask": "Build all", // configured in tasks.json
+            // "preLaunchCommands": ["Build all"], // you can execute command instead of task
+            "svdFile": "STM32G070-n.svd", // Include svd to watch device peripherals
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
+            "showDevDebugOutput": "raw" 
+        },
+        {
+            "name": "JLink attach",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/ws2812.elf",
+            "request": "attach",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "device": "STM32G070rb",
+            "interface": "swd",
+            "preLaunchTask": "Build all", // configured in tasks.json
+            // "preLaunchCommands": ["Build all"], // you can execute command instead of task
+            "svdFile": "STM32G070-n.svd", // Include svd to watch device peripherals
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
+            "showDevDebugOutput": "raw" 
+        },
+    ]
+}

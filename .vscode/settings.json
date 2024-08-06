@@ -1,0 +1,13 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/mnt/rr/ws2812/build",
+            "binaryPath": "/mnt/rr/ws2812/build/ws2812.elf",
+            "binaryArgs": []
+        }
+    ],
+    "files.associations": {
+        "string.h": "c",
+        "ws2812.h": "c"
+    }
+}

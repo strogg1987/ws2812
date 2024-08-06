@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name":"cubeMX",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/clang",
+            "includePath": [
+                "${workspaceFolder}/Drivers/STM32G0xx_HAL_Driver/Inc",
+                "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32G0xx/Include"
+            ]
+        }
+    ],
+    "version": 4
+}
